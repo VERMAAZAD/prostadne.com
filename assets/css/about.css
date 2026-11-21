@@ -1,0 +1,510 @@
+/* ── About Page Specific Styles ── */
+.nav-right a{
+    background-color: #f5b236;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+.nav-right a:hover{
+    background-color: #d08f18;
+    color: #fff;
+}
+.about-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 6px;
+}
+.about-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.about-hero-pill i { color: #fff; font-size: 13px; }
+
+/* Story Section */
+.story-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 5vw 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+.story-img-block {
+  position: relative;
+}
+.story-img-main {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--green-light);
+  border: 1px solid #c5e0d3;
+}
+.story-img-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+}
+.story-img-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--amber);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(232,160,32,.35);
+}
+.story-img-badge-num {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+  display: block;
+}
+.story-img-badge-label {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: .9;
+  margin-top: 2px;
+  display: block;
+}
+.story-text .s-tag { margin-bottom: 10px; }
+.story-text h2 {
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: -.8px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+.story-text p {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+/* Mission Values */
+.mission-section {
+  background: var(--cream2);
+  padding: 72px 5vw;
+}
+.mission-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 44px;
+}
+.mission-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 30px 24px;
+  border: 1px solid var(--border);
+  transition: transform .2s, box-shadow .2s;
+  text-align: center;
+}
+.mission-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 32px rgba(0,0,0,.08);
+}
+.mission-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+.mission-card-icon i {
+  font-size: 28px;
+  color: var(--green);
+}
+.mission-card h3 {
+  font-size: 19px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.mission-card p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* Ingredients Promise */
+.ingr-promise-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 5vw;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.ingr-promise-img {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+}
+.ingr-promise-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+}
+.ingr-promise-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+.ingr-promise-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.ingr-promise-list li i {
+  color: var(--green);
+  font-size: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.ingr-promise-list li strong { color: var(--text); font-weight: 800; }
+
+/* Stats Banner */
+.about-stats-banner {
+  background: var(--green-dark);
+  padding: 26px 5vw;
+}
+.about-stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+.about-stat {
+  padding: 10px;
+}
+.about-stat-num {
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+.about-stat-label {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Manufacturing */
+.manufacturing-section {
+  background: var(--cream);
+  padding: 72px 5vw;
+}
+.manufacturing-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.manufacturing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 44px;
+}
+.mfg-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: transform .2s, box-shadow .2s;
+}
+.mfg-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.07);
+}
+.mfg-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mfg-icon i {
+  font-size: 24px;
+  color: var(--green);
+}
+.mfg-text h4 {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.mfg-text p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+/* Team / Author highlight */
+.team-section {
+  background: #fff;
+  padding: 72px 5vw;
+}
+.team-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.team-card-large {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-top: 40px;
+  transition: box-shadow .2s;
+}
+.team-card-large:hover {
+  box-shadow: 0 10px 36px rgba(0,0,0,.08);
+}
+.team-avatar-lg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #A8710B 0%, #e8a020 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 6px 24px rgba(168,113,11,.3);
+}
+.team-info h3 {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.team-info .team-role {
+  font-size: 15px;
+  color: var(--green);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.team-info p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.team-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.team-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-light);
+  border: 1px solid #c5e0d3;
+  color: var(--green-dark);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 13px;
+}
+.team-badge-pill i { font-size: 12px; }
+
+/* Guarantee Section */
+.guarantee-section {
+  background: var(--amber-light);
+  border-top: 2px solid var(--amber);
+  border-bottom: 2px solid var(--amber);
+  padding: 56px 5vw;
+  text-align: center;
+}
+.guarantee-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.guarantee-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  box-shadow: 0 6px 20px rgba(232,160,32,.35);
+}
+.guarantee-icon i {
+  font-size: 36px;
+  color: #fff;
+}
+.guarantee-section h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  color: #7a4a00;
+  letter-spacing: -.6px;
+  margin-bottom: 14px;
+}
+.guarantee-section p {
+  font-size: 18px;
+  color: #8a5500;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* FAQ mini */
+.about-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CTA bottom */
+.about-cta-section {
+  background: var(--green-dark);
+  padding: 64px 5vw;
+  text-align: center;
+}
+.about-cta-section h2 {
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -.8px;
+  margin-bottom: 14px;
+}
+.about-cta-section p {
+  font-size: 18px;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+.about-cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--amber);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: background .2s, transform .15s;
+  text-decoration: none;
+}
+.about-cta-primary:hover { background: #d08f18; transform: translateY(-1px); }
+.about-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid rgba(255,255,255,.35);
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+.about-cta-ghost:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.6); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .story-wrap,
+  .ingr-promise-wrap {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .story-img-badge {
+    right: 10px;
+    bottom: 10px;
+  }
+  .mission-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-card-large {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .team-avatar-lg {
+    margin: 0 auto;
+  }
+  .team-badges { justify-content: center; }
+}
+@media (max-width: 600px) {
+    .nav-logo {
+    font-size: 20px;
+    }
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+  .manufacturing-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .about-cta-btns { flex-direction: column; align-items: center; }
+  .about-cta-primary, .about-cta-ghost { width: 100%; max-width: 360px; justify-content: center; }
+  .ingr-promise-wrap { flex-direction: column; }
+}
